@@ -5,7 +5,7 @@ describe('ProfileCard', () => {
   test('doit afficher le nom, le rôle et la ville', () => {
     render(<ProfileCard name="Sadef" role="Développeur" ville="Yaoundé" skills={[]}/>)
     
-    screen.debug();
+    screen.debug();// Affiche le DOM pour aider au débogage
     expect(screen.getByText(/Sadef/i)).toBeInTheDocument()
     expect(screen.getByText(/Développeur/i)).toBeInTheDocument()
     expect(screen.getByText(/Yaoundé/i)).toBeInTheDocument()
