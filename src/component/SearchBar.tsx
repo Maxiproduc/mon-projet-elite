@@ -1,9 +1,9 @@
 'use client'; // 1 Directive pour indiquer que ce composant doit être rendu côté client
 
-import React, { useState } from 'react'; // 2 Importation de React et du hook useState pour gérer l'état du composant
+import React, { useState } from 'react'; // 2 hook Importation de React et du hook useState pour gérer l'état du composant
 
 export default function SearchBar() { // Composant fonctionnel pour la barre de recherche
-    // 3. On crée notre état : [valeur_actuelle, fonction_pour_changer]
+    // 3. On crée notre état : [valeur_actuelle, fonction_pour_changer modificateur]
     const [recherche, setRecherche] = useState(''); // 4 Initialisation de l'état "recherche" avec une chaîne vide
 
     return (

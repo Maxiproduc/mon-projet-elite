@@ -1,6 +1,7 @@
 import SearchBar from "@/component/SearchBar";
 import ProfileCard from "@/component/ProfileCard";
 import StatusBadge from "@/component/StatusBadgeProps"; // Utilise le nom exact de ton fichier
+import ArticleList from "@/component/ArticleList";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
           <p className="text-gray-600 mb-2">Mon Statut actuel :</p>
           <StatusBadge status="online" /> {/* Affiche un badge de statut en ligne */}
         </div>
+
+        <ArticleList /> {/* Affiche la liste des articles récupérés depuis l'API */}
+        
       </div>
     </main>
   );
