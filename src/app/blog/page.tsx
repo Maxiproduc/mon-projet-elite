@@ -1,4 +1,4 @@
-
+import Image from 'next/image'; // On importe le composant Image de Next.js pour optimiser le chargement des images sur notre site. Le composant Image offre des fonctionnalités telles que le redimensionnement automatique, la prise en charge du format WebP, et l'affichage d'un placeholder pendant le chargement, ce qui améliore les performances et l'expérience utilisateur lors de l'affichage d'images sur notre page de blog.
 import Link from 'next/link'; // On importe le composant Link de Next.js pour créer des liens de navigation entre les pages de notre application. Link est un composant optimisé pour le routage client, ce qui permet une navigation rapide et fluide sans recharger la page entière.
 
 export default function BlogListPage() { // On exporte une fonction de composant React qui représente la page de liste du blog. Cette fonction retourne un JSX qui affiche un titre et une liste d'articles de blog. Chaque article est affiché avec un lien qui utilise le composant Link pour diriger l'utilisateur vers la page de détail de l'article correspondant, en utilisant le slug de l'article dans l'URL. Ce composant est ce qui sera rendu lorsque l'utilisateur naviguera vers la route /blog, affichant ainsi la liste des articles disponibles.
@@ -9,6 +9,15 @@ export default function BlogListPage() { // On exporte une fonction de composant
 
   return (
     <div className="p-8">
+      <div className="relative w-full h-64 mb-6">
+        <Image 
+          src="/blog.jpg"
+          alt="Illustration du blog" 
+          fill 
+          className="object-cover rounded-xl"
+          // placeholder="blur"
+        />
+      </div>
       <h1 className="text-3xl font-bold mb-6">Mon Blog Élite</h1>
       <ul className="space-y-4">
         {posts.map((post) => ( // On utilise la méthode map pour itérer sur le tableau d'articles et générer un élément de liste pour chaque article. Chaque élément de liste contient un lien qui utilise le composant Link pour diriger l'utilisateur vers la page de détail de l'article correspondant, en utilisant le slug de l'article dans l'URL. Cela permet une navigation facile et dynamique vers les pages de détail des articles à partir de la liste du blog.

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`devrait correspondre au snapshot final 1`] = `
+<DocumentFragment>
+  <div
+    class="p-8"
+  >
+    <div
+      class="relative w-full h-64 mb-6"
+    >
+      <img
+        alt="Illustration du blog"
+        class="object-cover rounded-xl"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=%2Fblog.jpg&w=3840&q=75"
+        srcset="/_next/image?url=%2Fblog.jpg&w=640&q=75 640w, /_next/image?url=%2Fblog.jpg&w=750&q=75 750w, /_next/image?url=%2Fblog.jpg&w=828&q=75 828w, /_next/image?url=%2Fblog.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fblog.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fblog.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fblog.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fblog.jpg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
+    <h1
+      class="text-3xl font-bold mb-6"
+    >
+      Mon Blog Élite
+    </h1>
+    <ul
+      class="space-y-4"
+    >
+      <li>
+         
+        <a
+          class="text-blue-600 text-xl hover:underline"
+          href="/blog/maitriser-jest"
+        >
+           Maîtriser Jest 
+        </a>
+      </li>
+      <li>
+         
+        <a
+          class="text-blue-600 text-xl hover:underline"
+          href="/blog/nextjs-pros"
+        >
+           Next.js 14 pour les Pros 
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
