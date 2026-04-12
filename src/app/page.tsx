@@ -3,6 +3,7 @@ import ProfileCard from "@/component/ProfileCard";
 import StatusBadge from "@/component/StatusBadgeProps"; // Utilise le nom exact de ton fichier
 import ArticleList from "@/component/ArticleList";
 import RegisterForm from "@/component/RegisterForm";
+import Dropdown from "@/component/Dropdown";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
       <div className="w-full max-w-md mt-10">
            
           <RegisterForm  /> {/* Affiche le formulaire d'inscription avec la fonction de test */}
-       
+          <Dropdown /> 
       </div>
     </main>
   );
