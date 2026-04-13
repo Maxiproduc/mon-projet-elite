@@ -4,6 +4,7 @@ import StatusBadge from "@/component/StatusBadgeProps"; // Utilise le nom exact 
 import ArticleList from "@/component/ArticleList";
 import RegisterForm from "@/component/RegisterForm";
 import Dropdown from "@/component/Dropdown";
+import ImageGallery from "@/component/ImageGallery";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
            
           <RegisterForm  /> {/* Affiche le formulaire d'inscription avec la fonction de test */}
           <Dropdown /> 
+          <ImageGallery /> {/* Affiche la galerie d'images avec les squelettes de chargement et les images récupérées depuis l'API */}
       </div>
     </main>
   );
